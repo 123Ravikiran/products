@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            
+        }
+        nav{
+            display: flex;
+            width: 100vw;
+            justify-content:space-around;
+            align-items: center;
+            background-color: pink;
+            color: rgb(255, 255, 255);
+            padding: 6px;
+        }
+        .list-ul-container{
+            display: flex;
+
+        }
+
+        @media screen and (max-width:576px) {
+            .list-ul-container{
+                display: none;
+            }
+
+            .logout-btn{
+            display: none;
+        }
+        .sub-footer{
+            background-color: darkgreen;
+        }
+
+            nav{
+                background-color: darkgreen;
+            }
+
+        }
+
+
+        @media  screen and (min-width:768px) {
+            nav{
+                background-color: orange;
+            }
+
+            .sub-footer{
+                background-color: orange;
+            }
+        }
+
+        @media  screen and (min-width:968px) {
+
+            nav{
+                background-color: rgb(10, 207, 105);
+            }
+            .sub-footer{
+                background-color: rgb(10, 207, 105);
+            }
+        }
+        
+        
+        li{
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .main-container{
+            display:flex;
+            flex-direction: column;
+            
+        }
+        .logo-container{
+           
+            display: flex;
+            padding-left: 15px;
+
+        }
+        .logo-img{
+        border-radius: 70px ;
+        margin-right: 6px;
+        }
+        .sub-footer{
+           
+            display: flex;
+            justify-content:space-around;
+            text-align: center;
+            padding: 10px;
+            color: aliceblue;
+            font-weight: bold;
+
+        }
+        .product-container{
+            padding-bottom: 15px;
+            background-color: rgb(75, 224, 224);
+           
+            margin: 5px;
+            padding: 10px;
+            border-radius: 14px;
+        
+        }
+        .product-img{
+            height: 150px;
+            width: 180px;
+            border-radius: 14px;
+            
+        }
+        .products-container{
+          overflow-y: scroll;
+          height: 72vh;
+            background-color: aliceblue;
+            background-image: url(./images/cart.jpg);
+            background-size: cover;
+            padding: 15px;
+            min-height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+
+            
+        }
+        .product-content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+        button{
+            padding: 6px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        h2,h6{
+            line-height: 0px;
+        }
+        h3{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="main-container">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo-img"  height="60px" width="60px" src="./images/mainlogo1.jpg" alt=""/>
+                <h3>Products</h3>
+            </div>
+            <ul class="list-ul-container">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./Categories.html"><li>Categories</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="./Contact.html"><li>Contact</li></a>
+
+                
+            </ul>
+            <div>
+                <a href="./login.html"><button>Login</button>
+                </a>
+                <a href="./logout.html"><button class="logout-btn">Sign Out</button></a>
+            </div>
+        </nav>
+       
+    </header>
+    <main>
+        <section>
+            <div class="products-container">
+                <div class="product-container">
+                    <img class="product-img" src="./images/bikes.jpg" alt=""/>
+                    <div class="product-content">
+                        <h2>product 1</h2>
+                        <h6>price : $ 100</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <img class="product-img" src="./images/Books.jpg" alt=""/>
+                    <div class="product-content">
+                        <h2>product 2</h2>
+                        <h6>price : $ 200</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                
+
+                <div class="product-container">
+                    <img class="product-img" src="./images/shopping.webp" alt=""/>
+                    <div class="product-content">
+                        <h2>product 3</h2>
+                        <h6>price : $ 250</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <img class="product-img" src="./images/design 1.jpg" alt=""/>
+                    <div class="product-content">
+                        <h2>product 4</h2>
+                        <h6>price : $ 150</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <img class="product-img" src="./images/Project_20230208_0303.webp" alt=""/>
+                    <div class="product-content">
+                        <h2>product 5</h2>
+                        <h6>price : $ 300</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <img class="product-img" src="./images/Project_20230208_0131.webp" alt=""/>
+                    <div class="product-content">
+                        <h2>product 6</h2>
+                        <h6>price : $ 180</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <img class="product-img" src="./images/watches 1.webp" alt=""/>
+                    <div class="product-content">
+                        <h2>product 7</h2>
+                        <h6>price : $ 190</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <img class="product-img" src="./images/156.webp" alt=""/>
+                    <div class="product-content">
+                        <h2>product 8</h2>
+                        <h6>price : $ 540</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-container">
+                    <img class="product-img" src="./images/Watches.jpg" alt=""/>
+                    <div class="product-content">
+                        <h2>product 9</h2>
+                        <h6>price : $ 432</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <img class="product-img" src="./images/shhirt.webp" alt=""/>
+                    <div class="product-content">
+                        <h2>product 10</h2>
+                        <h6>price : $ 546</h6>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sub-footer">
+            <div>
+            <li>About Us</li>
+            <li>The Best Sellers</li>
+            <li>www.Shopping Cart.com</li>
+        </div>
+        <div>
+                <li>About Us</li>
+                <li>The Best Sellers</li>
+                <li>www.Shopping Cart.com</li>
+            </div>
+        <div>
+            <li>About Us</li>
+            <li>The Best Sellers</li>
+            <li>www.Shopping Cart.com</li>
+        </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

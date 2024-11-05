@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .main-container{
+            height: 72vh;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            background-image:url(./images/logout2.jpeg);
+        }
+        .img-login-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 310px;
+            width: 410px;
+            background-color: rgb(8, 241, 230);
+        }
+        .img-container{
+            border: 2px solid brown;
+         
+        }
+        .input-label-container{
+            margin-bottom: 5px;
+
+        }
+        label{
+            color: rgb(199, 0, 0);
+            padding-left: 10px;
+            font-weight: 900;
+        }
+        input{
+            padding: 8px;
+            margin: 4px;
+        }
+        button{
+            background-color: rgb(255, 1, 1);
+            color: rgb(0, 0, 0);
+            padding: 10px 30px 10px 30px;
+            border-radius: 25px;
+        }
+        .btn-container{
+            display: grid;
+            flex-direction: row;
+            justify-content: center;
+        }
+       
+        .sub-footer{
+           
+           display: flex;
+           justify-content:space-around;
+           text-align: center;
+           padding: 10px;
+           color: aliceblue;
+           background-color: red;
+           font-weight: bold;
+       }
+       nav{
+            display: flex;
+            width: 100vw;
+            justify-content:space-around;
+            align-items: center;
+            background-color: rgb(254, 0, 233);
+            color: rgb(255, 255, 255);
+            padding: 6px;
+        }
+        .list-ul-container{
+            display: flex;
+            
+
+        }
+        li{
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .logo-container{
+           
+           display: flex;
+           padding-left: 15px;
+
+       }
+       .logo-img{
+       border-radius: 70px ;
+       margin-right: 6px;
+       }
+       .container{
+            display:flex;
+            flex-direction: column;
+        }
+        h3{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo-img"  height="60px" width="60px" src="./images/mainlogo1.jpg" alt=""/>
+                <h3>Products</h3>
+            </div>
+            <ul class="list-ul-container">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./Categories.html"><li>Categories</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="./Contact.html"><li>Contact</li></a>
+
+                
+            </ul>
+            <div>
+                <a href="./login.html"><button>Login</button>
+                </a>
+                <a href="./logout.html"><button class="logout-btn">Sign Out</button></a>
+            </div>
+        </nav>
+       
+    </header>
+    </div>
+    <div class="main-container">
+        <div class="img-login-container">
+            <div class="img-container">
+        </div>
+        <div>
+            <img height="300px" width="200px" style="border-radius: 15px;" src="./images/design.jpg" alt="" srcset="">
+        </div>
+        
+        <div class="sub-container"  >
+
+            <h2>SignOut</h2>
+
+            <div class="input-label-container">
+                <label for="">Name</label><br>
+                <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="input-label-container">
+                <label for="">Email</label><br>
+                <input type="email" placeholder="Enter Email">
+
+                <label for="">Password</label><br>
+                <input type="password" placeholder="Enter Password">
+            </div>
+            <div class="btn-container">
+                <button onclick="showMessage()">SignOut</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        function showMessage() {
+            alert("Login Sucessfully!");
+        }
+    </script>
+     <footer></footer>
+        <div class="sub-footer">
+            <div>
+            <li>About Us</li>
+            <li>The Best Sellers</li>
+            <li>www.Shopping Cart.com</li>
+        </div>
+        <div>
+                <li>About Us</li>
+                <li>The Best Sellers</li>
+                <li>www.Shopping Cart.com</li>
+            </div>
+        <div>
+            <li>About Us</li>
+            <li>The Best Sellers</li>
+            <li>www.Shopping Cart.com</li>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>

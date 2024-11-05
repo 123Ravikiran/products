@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+    
+        }
+        nav{
+            display: flex;
+            width: 100vw;
+            justify-content:space-around;
+            align-items: center;
+            background-color: pink;
+            color: rgb(255, 255, 255);
+            padding: 6px;
+        }
+        .list-ul-container{
+            display: flex;
+           
+
+        }
+
+        @media screen and (max-width:576px) {
+            .list-ul-container{
+                display: none;
+            }
+
+            .logout-btn{
+            display: none;
+        }
+        .sub-footer{
+            background-color: darkgreen;
+        }
+
+            nav{
+                background-color: darkgreen;
+            }
+
+        }
+
+
+        @media  screen and (min-width:768px) {
+            nav{
+                background-color: orange;
+            }
+
+            .sub-footer{
+                background-color: orange;
+            }
+        }
+
+        @media  screen and (min-width:968px) {
+
+            nav{
+                background-color: rgb(10, 207, 105);
+            }
+            .sub-footer{
+                background-color: rgb(10, 207, 105);
+            }
+        }
+        
+        
+        li{
+            list-style-type: none;
+            padding-left: 20px;
+           
+        }
+        .main-container{
+            display:flex;
+            flex-direction: column;
+          
+        }
+        .logo-container{
+           
+            display: flex;
+            padding-left: 15px;
+
+        }
+        .logo-img{
+        border-radius: 70px ;
+        margin-right: 6px;
+        }
+        .sub-footer{
+           
+            display: flex;
+            justify-content:space-around;
+            text-align: center;
+            padding: 10px;
+            color: rgb(253, 254, 255);
+            font-weight: bold;
+
+        }
+        .product-container{
+            padding-bottom: 15px;
+            background-color: rgb(75, 224, 224);
+           
+            margin: 5px;
+            padding: 10px;
+            border-radius: 14px;
+        
+        }
+        .product-img{
+            height: 150px;
+            width: 180px;
+            border-radius: 14px;
+            
+        }
+        .products-container{
+          overflow-y: scroll;
+          height: 72vh;
+            background-color: aliceblue;
+            padding: 15px;
+            min-height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap:wrap;
+
+            
+        }
+        .product-content{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+        button{
+            padding: 6px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border-radius: 6px;
+        }
+        h2,h6{
+            line-height: 0px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            padding: 5px 10px 5px 4px;
+            margin-bottom: 10px;
+        }
+        .contact-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./images/design\ 2.jpg);
+            background-size:cover;
+            height: 75vh;
+        }
+
+        .sub-contact{
+            /* border: 2px solid red; */
+            padding: 15px;
+            background-color: bisque;
+            border-radius: 12px;
+        }
+        h3{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+     <div class="main-container">
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img class="logo-img"  height="60px" width="60px" src="./images/mainlogo1.jpg" alt=""/>
+                <h3>Products</h3>
+            </div>
+            <ul class="list-ul-container">
+                <a href="./index.html"><li>Home</li></a>
+                <a href="./Categories.html"><li>Categories</li></a>
+                <a href="./About.html"><li>About</li></a>
+                <a href="./Contact.html"><li>Contact</li></a>
+
+                
+            </ul>
+            <div>
+                <a href="./login.html"><button>Login</button>
+                </a>
+                <a href="./logout.html"><button class="logout-btn">Sign Out</button></a>
+            </div>
+        </nav>
+       
+    </header>
+
+    <div class="contact-container">
+        <div class="sub-contact">
+            <h2 style="text-align: center; color: green;">Contact Us!</h2>
+            <p>Feel free to contact us with any questions or inquiries.</p>
+            <form>
+                <label>Name:</label>
+                <input />
+
+                <label>Email:</label>
+                <input type="email" />
+                
+                <button>Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sub-footer">
+            <div>
+            <li>About Us</li>
+            <li>The Best Sellers</li>
+            <li>www.Shopping Cart.com</li>
+        </div>
+        <div>
+                <li>About Us</li>
+                <li>The Best Sellers</li>
+                <li>www.Shopping Cart.com</li>
+            </div>
+        <div>
+            <li>About Us</li>
+            <li>The Best Sellers</li>
+            <li>www.Shopping Cart.com</li>
+        </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
